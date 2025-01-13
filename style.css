@@ -1,0 +1,67 @@
+body {
+    background-color: beige;
+    background-image: url(BackgroundImage2.jpg);
+    background-size: 30%;
+    background-position: 50% 0%; /* Start at the top */
+    animation: gradient 15s linear infinite; /* Apply infinite downward animation */
+    overflow: hidden;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 50% 0%; /* Start at the top */
+    }
+    100% {
+      background-position: 50% 100%; /* Move to the bottom */
+    }
+}
+
+.mainDiv {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: xx-large;
+    padding: 3%;
+    border: 5px solid black;
+    border-radius: 2.5%;
+    user-select: none;
+    -webkit-user-select: none;
+    box-shadow: 8px 8px 11px rgba(100,100,100,0.45);
+}
+
+.input {
+    font-size: large;
+    margin: 5%;
+}
+
+.Green {
+    color: lightgreen;
+    background-color: rgba(0, 100, 0, 0.5);
+}
+
+.Red {
+    color: red;
+    background-color: rgba(128, 0, 0, 0.5);
+}
+
+.animated {
+    display: inline-block;
+    transition: transform 0.05s ease, font-size 0.05s ease; 
+}
+
+.animated:hover {
+    transform: scale(1.1); 
+    font-size: inherit; 
+}
+
+.animated:active {
+    transform: scale(1.05);
+}
+
+.Selected {
+    font-size: 120%;
+}
